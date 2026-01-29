@@ -1,0 +1,26 @@
+{
+  "bundles": {
+    "web3-loadout": {
+      "name": "web3-loadout",
+      "description": "Loadout with bundled Web3/crypto skills",
+      "version": "1.0.0",
+      "skills": [
+        "references/crypto-skills/skills/evm-swiss-knife",
+        "references/crypto-skills/skills/token-minter",
+        "references/crypto-skills/skills/trading-strategist",
+        "references/crypto-skills/skills/market-sentiment",
+        "references/crypto-skills/skills/meme-scout",
+        "references/crypto-skills/skills/yield-opportunities"
+      ]
+    },
+    "trading-loadout": {
+      "name": "trading-loadout",
+      "description": "Loadout with bundled trading analysis skills",
+      "version": "1.0.0",
+      "skills": [
+        "references/crypto-skills/skills/trading-strategist",
+        "references/crypto-skills/skills/market-sentiment"
+      ]
+    }
+  }
+}

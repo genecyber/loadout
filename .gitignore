@@ -1,0 +1,21 @@
+node_modules/
+dist/
+.DS_Store
+*.log
+.env
+.env.local
+
+# Local skills directory (use for development/testing)
+skills/
+
+# Bundle outputs
+bundles/
+
+# References
+references/
+
+# Session notes
+session.md
+
+# Plugins
+plugins/
