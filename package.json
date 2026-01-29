@@ -1,19 +1,43 @@
 {
-  "name": "loadout",
+  "name": "loadout-mcp",
   "version": "0.1.0",
   "description": "MCP server that bridges the Agent Skills spec to any MCP-compatible agent. Discover, search, and manage skills through standardized MCP primitives.",
   "type": "module",
   "main": "dist/index.js",
   "bin": {
+    "loadout-mcp": "dist/index.js",
     "loadout": "dist/index.js"
   },
+  "files": [
+    "dist",
+    "prompts",
+    "README.md"
+  ],
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "agent-skills",
+    "ai-agent",
+    "claude",
+    "anthropic",
+    "skills",
+    "web3",
+    "crypto"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/genecyber/loadout.git"
+  },
+  "author": "genecyber",
+  "license": "MIT",
   "scripts": {
     "build": "tsc",
     "start": "node dist/index.js",
     "dev": "tsx src/index.ts",
     "test": "vitest",
     "bundle": "npm run build && tsx scripts/bundle.ts",
-    "bundle:list": "tsx scripts/bundle.ts --list"
+    "bundle:list": "tsx scripts/bundle.ts --list",
+    "prepublishOnly": "npm run build"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.12.0",
